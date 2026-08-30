@@ -1,6 +1,6 @@
 {
   "name": "dsh-token-billing",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Token billing meter: extend the composer status bar with per-model pricing and detailed token cost breakdown",
   "type": "module",
