@@ -1,6 +1,6 @@
 {
   "name": "dsh-token-billing",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "private": true,
   "description": "Token billing meter: extend the composer status bar with per-model pricing and detailed token cost breakdown",
   "type": "module",
@@ -14,7 +14,7 @@
     "client": {
       "platform": "web",
       "inject": [
-        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-renderer",
         "@deepseek-ai/dsh-client-ui-settings",
         "@deepseek-ai/dsh-client-ui-settings-general",
         "@deepseek-ai/dsh-client-ui-conversation",
@@ -27,6 +27,6 @@
   },
   "license": "MIT",
   "dependencies": {
-    "zod": "^3.25.0"
+    "zod": "^3.25.76"
   }
 }

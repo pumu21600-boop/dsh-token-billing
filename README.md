@@ -19,11 +19,12 @@ DSH 插件：按模型实时统计 token 消耗与费用。
      -Target "C:\path\to\dsh-token-billing"
    ```
 
-2. 在 `~/.dsh/profiles/web/cordis.patch.yml` 追加：
+2. 在 `~/.dsh/profiles/web/cordis.patch.yml` 追加（必须用 `insert` 形式，写成顶层 `- id: / name:` 只会得到 `patch: entry ... not found` 警告且不生效）：
 
    ```yaml
-   - id: dsh-token-billing
-     name: 'dsh-token-billing'
+   - insert:
+       - id: dsh-token-billing
+         name: 'dsh-token-billing'
    ```
 
 3. 重启 DSH 后端并刷新页面。
